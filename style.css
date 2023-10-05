@@ -109,3 +109,38 @@ body {
   background-color: white;
   color: #575a85;
 }
+
+@media screen and (max-width: 769px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    width: 100%;
+    height: 50%;
+  }
+  .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .left p {
+    display: none;
+  }
+  .left h1,
+  .left div {
+    width: 50%;
+    /* border: 1px solid white; */
+    height: 100%;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+  }
+  .right button {
+    height: 20%;
+  }
+}
